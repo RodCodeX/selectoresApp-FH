@@ -29,6 +29,11 @@ export class SelectorPageComponent implements OnInit {
     this.onCountryChanged();
   }
 
+  // ngAfterViewInit(): void {
+  //   this.onRegionChanged();
+  //   this.onCountryChanged();
+  // }
+
   get regions(): Region[] {
     return this._countriesService.regions;
   }
